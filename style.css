@@ -1,0 +1,18 @@
+body {font-family: Arial, sans-serif; margin:10px;}
+
+h1.heading {text-align: left;}
+
+div.menu { padding:10px;border-bottom: 1px solid #999;text-align:right; word-spacing: 2em;}
+.title {float:left; font-size: x-large; text-align: left;word-spacing: normal;}
+
+#me {float:left; padding:10px;margin:0px; margin-top: 20px;margin-right:1em;margin-left: 1em;}
+#contact {float:left; padding: 10px; text-align: left;font-size: small; margin-top: 0px;}
+
+div.main {text-align:left;padding: 10px;max-width: 40em;margin: auto;}
+
+
+
+span.element {font-weight: bold;}
+
+div.footer {padding: 10px; margin-top: 30px; margin-bottom: 30px;  border-top: 1px solid #999;font-size: small}
+div.footer img.oxlogo {float:right; padding-left:10px}
