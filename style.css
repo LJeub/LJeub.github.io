@@ -14,5 +14,7 @@ div.main {text-align:left;padding: 10px;max-width: 40em;margin: auto;}
 
 span.element {font-weight: bold;}
 
+span.codename {font-weight: bold;}
+
 div.footer {padding: 10px; margin-top: 30px; margin-bottom: 30px;  border-top: 1px solid #999;font-size: small}
 div.footer img.oxlogo {float:right; padding-left:10px}
