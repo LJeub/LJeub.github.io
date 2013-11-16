@@ -1,6 +1,11 @@
-body {font-family: Arial, sans-serif; margin:10px;}
+html {
+	width: 100%;
+}
 
-h1.heading {text-align: left;}
+body {
+	font-family: Arial, sans-serif; 
+	margin:10px;
+}
 
 div.menu { 
 	padding:10px;
@@ -10,18 +15,54 @@ div.menu {
 	line-height: 200%;
 }
 
+h1.heading {
+	text-align: left;
+}
 
-.title {float:left; font-size: x-large; text-align: left;word-spacing: normal;}
+div.main {
+	text-align: left;
+	padding: 10px;
+	max-width: 40em;
+	margin: auto;
+}
 
-img#me {float:left; padding:10px;margin:0px; margin-top: 20px;margin-right:1em;margin-left: 1em;}
-div#contact {float:left; padding: 10px; text-align: left;font-size: small; margin-top: 0px;}
+div.footer {
+	padding: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-top: 1px solid #999;
+	font-size: small
+}
 
-div.main {text-align:left;padding: 10px;max-width: 40em;margin: auto;}
+div.footer img.oxlogo {
+	float:right; 
+	padding-left: 10px
+}
+
+span.element {
+	font-weight: bold;
+}
+
+span.codename {
+	font-weight: bold;
+}
+
+img#me {float:left;
+	padding:10px;
+	margin:0px;
+	margin-top: 20px;
+	margin-right:1em;
+	margin-left: 1em;
+}
+
+div#contact {
+	float:left;
+	padding: 10px;
+	text-align: left;
+	font-size: small;
+	margin-top: 0px;
+}
 
 
-span.element {font-weight: bold;}
 
-span.codename {font-weight: bold;}
 
-div.footer {padding: 10px; margin-top: 30px; margin-bottom: 30px;  border-top: 1px solid #999;font-size: small}
-div.footer img.oxlogo {float:right; padding-left:10px}
