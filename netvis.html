@@ -1,0 +1,63 @@
+<!Doctype html>
+
+<html>
+	<head>
+		<title>Lucas Jeub - NetVis</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta keyword="author" content="Lucas Jeub">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<body>
+		<div class="menu">
+			<a href="index.html">Home</a>
+			<a href="research.html">Research</a>
+			<a href="teaching.html">Teaching</a>
+			<a href="code.html">Code</a>
+			<a href="links.html">Links</a>
+		</div>
+		
+		<h1 class="heading"> <span class="codename">SpringVisCom</span> Examples</h1>
+		
+		<div class="main">
+		
+			<h2>Network of network scientists</h2>
+			
+			<p>
+				Largest connected component of the <a href="http://www-personal.umich.edu/~mejn/netdata/" target="_blank"> coauthorship network of network scientists</a> compiled by Mark Newman. 
+			</p>
+		</div>
+		
+		<div class="imagegallery">
+			<div class="figure">
+				<a href="code/netvis/netsci.pdf"><img src="code/netvis/netsci.svg" alt="Visualisation of network of network scientists"/></a>
+				<p>
+					Largest connected component of the <a href="http://www-personal.umich.edu/~mejn/netdata/" target="_blank"> coauthorship network of network scientists</a> layed out using <span class="codename">SpringVisCom</span> default parameters
+				</p>
+			</div>
+			
+			<div class="figure">
+				<a href="code/netvis/netsci_local.pdf"><img src="code/netvis/netsci_local.svg" alt="Visualisation of network of network scientists" /></a>
+				<p>
+					Same network layed out using a sparse distance matrix, such that springs are only placed between connected nodes. This layout can be generated with the following code, where <code>A</code> is the adjacency matrix of the network, and <code>S</code> gives community assignments for each node.
+				</p>
+
+				<div class="codeblock">
+					<code>[i,j,v]=find(A);
+D=sparse(i,j,max(v)-v+1);
+xy=SpringVisCom(D,S,'background_field',1,...
+	'distance_matrix',true);</code>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="footer">
+			<img class="oxlogo" src="oxford.jpg" alt="oxford logo"/>
+			<p>
+				This page was last modified by Lucas Jeub on <script>document.write(document.lastModified);</script>. Please email <a href="mailto:jeub@maths.ox.ac.uk">jeub@maths.ox.ac.uk</a> for feedback and comments.
+			</p>
+		</div>
+		
+	</body>
+</html>
