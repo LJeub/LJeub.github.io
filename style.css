@@ -97,6 +97,20 @@ div#contact {
 	margin-top: 0px;
 }
 
+code {
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+div.codeblock {
+	width: 94%;
+	padding: 3%;
+	overflow: scroll;
+	line-height: 1.2;
+}
+
+div.codeblock code {
+	white-space: pre;
+}
 
 
 
