@@ -26,7 +26,41 @@ div.main {
 	margin: auto;
 }
 
+div.imagegallery {
+	width: 100%;
+	margin-top: 2em;
+
+}
+
+div.imagegallery div.figure {
+	max-width: 40%;
+	margin: 0;
+	padding: 0;
+	min-width: 250px;
+	font-size: small;
+}
+
+div.imagegallery div.figure {
+	float:left;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+div.figure img {
+	max-height: 450px;
+	width: 90%;
+	padding: 5%;
+	margin: 0;
+}
+
+div.figure p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
 div.footer {
+	clear: both;
 	padding: 10px;
 	margin-top: 30px;
 	margin-bottom: 30px;
