@@ -7,16 +7,30 @@ body {
 	margin:10px;
 }
 
-div.menu { 
-	padding:10px;
+
+div.header {
+	overflow: hidden;
 	border-bottom: 1px solid #999;
+}
+
+div.menu { 
+	float: right;
+	padding:5px;
+	margin: 0px;
 	text-align:right; 
 	word-spacing: 2em; 
 	line-height: 200%;
+	overflow: hidden;
 }
 
 h1.heading {
 	text-align: left;
+	float: left;
+	word-spacing: normal;
+	padding: 10px;
+	padding-top: 0px;
+	margin: 0px;
+	padding-right: 1em;
 }
 
 div.main {
