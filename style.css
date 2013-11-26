@@ -43,21 +43,25 @@ div.main {
 div.imagegallery {
 	width: 100%;
 	margin-top: 2em;
-
+	margin-bottom: 2em;
+	overflow: hidden;
 }
 
-div.imagegallery div.figure {
+div.figure {
 	max-width: 40%;
 	margin: 0;
 	padding: 0;
 	min-width: 250px;
 	font-size: small;
-}
-
-div.imagegallery div.figure {
 	float:left;
 	margin-left: 5%;
 	margin-right: 5%;
+}
+
+@media (max-width: 645px) {
+	div.figure {
+		max-width: 90%;
+	}
 }
 
 div.figure img {
