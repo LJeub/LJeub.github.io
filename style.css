@@ -127,4 +127,48 @@ div.codeblock code {
 }
 
 
+div.note {
+	max-width: 300px;
+	float: right;
+	overflow: hidden;
+	border: 1px solid #999;
+	padding: 10px;
+	margin: 3em;
+	margin-right: 10px;
+	font-size: small;
+}
+
+div.note h3{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1em;
+	font-size: normal;
+}
+
+dl{
+	margin: 0;
+	margin-left: 1em;
+	margin-bottom: 1em;
+	padding: 0;
+	float:left;
+	overflow: hidden;
+	line-height: 1.4;
+}
+
+dt{
+	margin-right: 1em;
+	padding: 0;
+	float: left;
+	clear: left;
+	width: 2em;
+}
+
+dd{
+	margin: 0;
+	padding: 0;
+	width: calc(100% - 3em);
+	float: left;
+}
+
+
 

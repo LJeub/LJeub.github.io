@@ -21,10 +21,20 @@
 			</div>
 		</div>
 		
+		<div class="note">
+			<h3>Notation</h3> 
+			<dl>
+				<dt><code>A</code></dt> <dd>Adjacency matrix</dd>
+				<dt><code>S</code></dt> <dd>Vector of community assignments for each node</dd>
+				<dt><code>xy</code></dt> <dd>Layout coordinates for each node</dd>
+			</dl>
+		</div>
 		
 		<div class="main">
 		
-			<h2>Network of network scientists</h2>
+			<h2> <span class="codename">SpringVisCom</span> Examples</h2>
+			
+			<h3>Network of network scientists</h3>
 			
 			<p>
 				Largest connected component of the <a href="http://www-personal.umich.edu/~mejn/netdata/" target="_blank"> coauthorship network of network scientists</a> compiled by Mark Newman. 
@@ -35,14 +45,17 @@
 			<div class="figure">
 				<a href="code/netvis/netsci.pdf"><img src="code/netvis/netsci.svg" alt="Visualisation of network of network scientists"/></a>
 				<p>
-					Largest connected component of the <a href="http://www-personal.umich.edu/~mejn/netdata/" target="_blank"> coauthorship network of network scientists</a> layed out using <span class="codename">SpringVisCom</span> default parameters
+					Layout using <span class="codename">SpringVisCom</span> default parameters, which attempts to preserve global distances between nodes by placing springs between all pairs of nodes. This layout can be generated with the following code, where <code>A</code> is the adjacency matrix of the network, and <code>S</code> gives community assignments for each node.
 				</p>
+				<div class="codeblock">
+					<code>xy=SpringVisCom(A,S);</code>
+				</div>
 			</div>
 			
 			<div class="figure">
 				<a href="code/netvis/netsci_local.pdf"><img src="code/netvis/netsci_local.svg" alt="Visualisation of network of network scientists" /></a>
 				<p>
-					Same network layed out using a sparse distance matrix, such that springs are only placed between connected nodes. This layout can be generated with the following code, where <code>A</code> is the adjacency matrix of the network, and <code>S</code> gives community assignments for each node.
+					Layout using a sparse distance matrix such that springs are only placed between connected nodes, which only atempts to preserve local distances. This layout can be generated with the following code, where <code>A</code> is the adjacency matrix of the network, and <code>S</code> gives community assignments for each node.
 				</p>
 
 				<div class="codeblock">
