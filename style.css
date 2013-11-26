@@ -36,8 +36,9 @@ h1.heading {
 div.main {
 	text-align: left;
 	padding: 10px;
-	max-width: 40em;
+	max-width: 45em;
 	margin: auto;
+	line-height: 1.4;
 }
 
 div.imagegallery {
@@ -99,7 +100,8 @@ span.codename {
 	font-weight: bold;
 }
 
-img#me {float:left;
+img#me {
+	float:left;
 	padding:10px;
 	margin:0px;
 	margin-top: 20px;
