@@ -47,7 +47,7 @@
 			<div class="figure">
 				<a href="code/netvis/netsci.pdf"><img src="code/netvis/netsci.svg" alt="Visualisation of network of network scientists"/></a>
 				<p>
-					Layout using <span class="codename">SpringVisCom</span> default parameters, which attempts to preserve global distances between nodes by placing springs between all pairs of nodes. This layout can be generated with the following code, where <code>A</code> is the adjacency matrix of the network, and <code>S</code> gives community assignments for each node.
+					Layout using <span class="codename">SpringVisCom</span> default parameters, which attempts to preserve global distances between nodes by placing springs between all pairs of nodes. This layout can be generated with the following code:
 				</p>
 				<div class="codeblock">
 					<code>xy=SpringVisCom(A,S);</code>
@@ -57,7 +57,7 @@
 			<div class="figure">
 				<a href="code/netvis/netsci_local.pdf"><img src="code/netvis/netsci_local.svg" alt="Visualisation of network of network scientists" /></a>
 				<p>
-					Layout using a sparse distance matrix such that springs are only placed between connected nodes, which only atempts to preserve local distances. This layout can be generated with the following code, where <code>A</code> is the adjacency matrix of the network, and <code>S</code> gives community assignments for each node.
+					Layout using a sparse distance matrix such that springs are only placed between connected nodes, which only atempts to preserve local distances. This layout can be generated with the following code:
 				</p>
 
 				<div class="codeblock">
