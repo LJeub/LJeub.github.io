@@ -1,10 +1,14 @@
 html {
 	width: 100%;
+	height: 100%;
 }
 
 body {
-	font-family: Arial, sans-serif; 
-	margin:10px;
+	font-family: Arial, sans-serif;
+	padding: 10px;
+	width: calc(100% - 20px); 
+	min-width: 300px;
+	margin: 0;
 }
 
 
@@ -51,23 +55,34 @@ div.menu li{
 div.main {
 	text-align: left;
 	padding: 10px;
-	max-width: 45em;
-	margin: auto;
+	max-width: 700px;
+	margin: 0;
+	margin-left: calc(100% / 2.62 - 720px / 2.62);
 	line-height: 1.4;
+} 
+
+@media (max-width: 740px) {
+	div.main {
+		margin-left: 0;
+	}
+}
+
+div.main h1,div.main h2,div.main h3,div.main h4,div.main h5,div.main h6 {
+
 }
 
 div.imagegallery {
 	width: 100%;
 	margin-top: 2em;
 	margin-bottom: 2em;
-	overflow: hidden;
+	overflow-y: hidden;
 }
 
 div.figure {
 	max-width: 40%;
 	margin: 0;
 	padding: 0;
-	min-width: 250px;
+	min-width: 200px;
 	font-size: small;
 	float:left;
 	margin-left: 5%;
@@ -99,7 +114,8 @@ div.footer {
 	margin-top: 30px;
 	margin-bottom: 30px;
 	border-top: 1px solid #999;
-	font-size: small
+	font-size: small;
+	overflow: hidden;
 }
 
 div.footer img.oxlogo {
@@ -150,13 +166,13 @@ div.codeblock code {
 
 div.note {
 	max-width: 300px;
-	float: right;
-	overflow: hidden;
 	border: 1px solid #999;
 	padding: 10px;
-	margin: 3em;
-	margin-right: 10px;
+	margin: 10px;
+	margin-top: 3em;
+	margin-bottom: 1em;
 	font-size: small;
+	overflow: hidden;
 }
 
 div.note h3{
@@ -164,6 +180,7 @@ div.note h3{
 	padding: 0;
 	margin-bottom: 1em;
 	font-size: normal;
+	overflow: hidden;
 }
 
 dl{
