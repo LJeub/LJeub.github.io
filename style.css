@@ -42,10 +42,10 @@ div.menu li{
 	float:left;
 	margin-left: 2em;
 }
+
+.subheading {
+	margin: 0;
 	padding: 10px;
-	padding-top: 0px;
-	margin: 0px;
-	padding-right: 1em;
 }
 
 div.main {
