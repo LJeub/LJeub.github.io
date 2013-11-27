@@ -13,20 +13,35 @@ div.header {
 	border-bottom: 1px solid #999;
 }
 
+div.header .heading {
+	text-align: left;
+	float: left;
+	word-spacing: normal;
+	padding: 0;
+	padding-top: 0px;
+	margin: 0px;
+}
+
 div.menu { 
 	float: right;
 	padding:5px;
 	margin: 0px;
 	text-align:right; 
 	word-spacing: 2em; 
-	line-height: 200%;
+	line-height: 2;
 	overflow: hidden;
 }
 
-h1.heading {
-	text-align: left;
-	float: left;
-	word-spacing: normal;
+div.menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.menu li{
+	float:left;
+	margin-left: 2em;
+}
 	padding: 10px;
 	padding-top: 0px;
 	margin: 0px;
