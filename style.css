@@ -57,8 +57,11 @@ div.main {
 	padding: 10px;
 	max-width: 700px;
 	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
 	margin-left: calc(100% / 2.62 - 720px / 2.62);
 	line-height: 1.4;
+	clear: left;
 } 
 
 @media (max-width: 740px) {
@@ -165,14 +168,23 @@ div.codeblock code {
 
 
 div.note {
-	max-width: 300px;
+	float:left;
 	border: 1px solid #999;
 	padding: 10px;
-	margin: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
 	margin-top: 3em;
 	margin-bottom: 1em;
 	font-size: small;
 	overflow: hidden;
+}
+
+@media (min-width: 740px) {
+	div.note {
+		float:right;
+		max-width: 30%;
+		margin-left: 3em;
+	}
 }
 
 div.note h3{
@@ -188,7 +200,6 @@ dl{
 	margin-left: 1em;
 	margin-bottom: 1em;
 	padding: 0;
-	float:left;
 	overflow: hidden;
 	line-height: 1.4;
 }
@@ -204,7 +215,8 @@ dt{
 dd{
 	margin: 0;
 	padding: 0;
-	width: calc(100% - 3em);
+	max-width: 70%;
+	max-width: calc(100% - 3em);
 	float: left;
 }
 
