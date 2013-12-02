@@ -220,5 +220,25 @@ dd{
 	float: left;
 }
 
+div.thumbnails {
+	padding: 10px;
+	float: left;
+	display:block;
+	margin: auto;
+	border: 1px solid #999;
+	text-align: center;
+	font-size: small;
+}
+
+div.thumbnails img {
+	max-height: 100px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div.thumbnails p {
+	clear: left;
+	margin: 0;
+}
 
 

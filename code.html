@@ -25,10 +25,10 @@
 		
 		<h2 class="subheading">Code</h2>
 		
-		<div class="main">
+		<div class="main" style="overflow: hidden;">
 			
 			
-			<h3>Spring based visualization for networks with communities</h3>
+			<h3 id="SpringVisCom">Spring based visualization for networks with communities</h3>
 			<p>
 				<span class="codename">SpringVisCom</span> produces network layouts emphasising pre-specified community structure (e.g. obtained using a community detection algorithm). The node layout is based on a spring system (see <a href="http://dx.doi.org/10.1016/0020-0190(89)90102-6">Tomihisa Kamada and Satoru Kawai: "An Algorithm For Drawing General Undirected Graphs"</a>), where nodes are charged particles, such that nodes in different communities repel each other.
 			</p>
@@ -38,8 +38,15 @@
 			<p>
 				This code requires the <a href="https://www.mathworks.co.uk/matlabcentral/fileexchange/10922-matlabbgl">MatlabBGL</a> library for all-shortest-paths computations. 
 				To plot a network with the coordinates obtained from <span class="codename">SpringVisCom</span> in MATLAB, you can use <span class="codename">graphplot2d</span> available from <a href="http://netwiki.amath.unc.edu/VisComms/VisComms">NetWiki</a>.
-				Some example visualisations can be found <a href="netvis.html">here</a>.
 			</p>
+			
+			<a href="netvis.html">
+			<div class="thumbnails">
+				<img src="code/netvis/netsci.png" />
+				<img src="code/netvis/netsci_local.png" />
+				<p>Some example visualizations can be found here</p>
+			</div>
+			</a>
 		</div>
 		
 		<div class="footer">
