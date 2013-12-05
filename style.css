@@ -221,24 +221,30 @@ dd:first-of-type {
 
 
 .thumbnails {
-	padding: 10px;
-	float: left;
-	display:block;
-	margin: auto;
-	border: 1px solid #999;
 	text-align: center;
 	font-size: small;
+	overflow: hidden;
 }
 
-div.thumbnails img {
+.thumbnails a{
+	padding: 10px;
+	float: left;
+	border: 1px solid #999;
+}
+
+.thumbnails img {
 	max-height: 100px;
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
-div.thumbnails p {
+.thumbnails p {
 	clear: left;
 	margin: 0;
 }
 
-
+h1,h2,h3,h4,h5,h6 {
+	clear: left;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}

@@ -24,7 +24,7 @@
 		
 		<h2 class="subheading">Code</h2>
 		
-		<div class="main" style="overflow: hidden;">
+		<div class="main">
 			
 			
 			<h3 id="SpringVisCom">Spring based visualization for networks with communities</h3>
@@ -39,13 +39,19 @@
 				To plot a network with the coordinates obtained from <span class="codename">SpringVisCom</span> in MATLAB, you can use <span class="codename">graphplot2d</span> available from <a href="http://netwiki.amath.unc.edu/VisComms/VisComms">NetWiki</a>.
 			</p>
 			
-			<a href="code/netvis.html">
 			<div class="thumbnails">
+			<a href="code/netvis.html">
 				<img src="code/netvis/netsci.png" />
 				<img src="code/netvis/netsci_local.png" />
 				<p>Some example visualizations can be found here</p>
-			</div>
 			</a>
+			</div>
+			
+			<h3>GML parser for MATLAB</h3>
+			<p>A set of functions to work with data encoded in the <a href="http://www.fim.uni-passau.de/en/fim/faculty/chairs/theoretische-informatik/projects.html">GML</a> format in MATLAB. The function <span class="codename">gml2struct</span> reads a GML file and returns the data as a struct, preserving the tree structure and all the information of the GML file. The function <span class="codename">gmlstruct2mat</span> takes the graph part of this struct and returns the adjacency matrix of the graph. 
+			</p>
+			<p>The latest version (version 1.0) can be obtained here: <a href="code/GMLparser_v1.0.zip">GMLparser_v1.0.zip</a></p>
+			
 		</div>
 		
 		<div class="footer">
