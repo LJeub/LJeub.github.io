@@ -47,6 +47,12 @@ div.header .heading {
 	padding: 10px;
 }
 
+.top-matter {
+	margin: 0;
+	margin-top: 1em;
+	overflow: hidden;
+}
+
 .main {
 	text-align: left;
 	padding: 10px;
@@ -128,18 +134,22 @@ span.codename {
 img#me {
 	float:left;
 	padding:10px;
-	margin:0px;
-	margin-top: 20px;
-	margin-right:1em;
-	margin-left: 1em;
+	margin:1em;
+	margin-top: 0;
 }
 
-div#contact {
+#contact {
 	float:left;
 	padding: 10px;
 	text-align: left;
 	font-size: small;
 	margin-top: 0px;
+}
+#contact h2 {
+	margin-top: 0;
+}
+#contact p:last-child {
+	margin-bottom: 0;
 }
 
 code {
