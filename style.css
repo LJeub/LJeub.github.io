@@ -1,3 +1,4 @@
+/*Global Styles*/
 html {
 	width: 100%;
 	height: 100%;
@@ -12,13 +13,58 @@ body {
 	margin: 0;
 }
 
+h1,h2,h3,h4,h5,h6 {
+	clear: left;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
 
-div.header {
+dl{
+	margin: 0;
+	margin-left: 1em;
+	margin-bottom: 1em;
+	padding: 0;
+	overflow: hidden;
+	line-height: 1.4;
+}
+
+dt{
+	margin: 0;
+	margin-right: 1em;
+	margin-top: 1em;
+	padding: 0;
+	float: left;
+	clear: left;
+	min-width: 2em;
+}
+
+dt:first-of-type {
+	margin-top: 0;
+}
+
+dd{
+	margin-left: 2em;
+	margin-top: 1em;
+	padding: 0;
+}
+
+dd:first-of-type {
+	margin-top: 0;
+}
+
+code {
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+
+/*Header*/
+#header {
+    padding: 0;
 	overflow: hidden;
 	border-bottom: 1px solid #999;
 }
 
-div.header .heading {
+#heading {
 	text-align: left;
 	float: left;
 	word-spacing: normal;
@@ -42,17 +88,18 @@ div.header .heading {
 	margin-left: 2em;
 }
 
-.subheading {
+#subheading {
 	margin: 0;
 	padding: 10px;
 }
 
-.top-matter {
+#top-matter {
 	margin: 0;
 	margin-top: 1em;
 	overflow: hidden;
 }
 
+/*main text*/
 .main {
 	text-align: left;
 	padding: 10px;
@@ -66,11 +113,34 @@ div.header .heading {
 } 
 
 @media (max-width: 740px) {
-	div.main {
+	.main {
 		margin-left: 0;
 	}
 }
 
+.main h3:first-child {
+    margin-top: 1em;
+}
+
+/*footer*/
+#footer {
+	clear: both;
+	padding: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-top: 1px solid #999;
+	font-size: small;
+	overflow: hidden;
+}
+
+#footer img#oxlogo {
+	float:right; 
+	padding-left: 10px
+}
+
+
+
+/*images*/
 .imagegallery {
 	width: 100%;
 	margin-top: 2em;
@@ -107,55 +177,30 @@ div.header .heading {
 	margin-bottom: 0;
 }
 
-
-.footer {
-	clear: both;
-	padding: 10px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	border-top: 1px solid #999;
+.thumbnails {
+	text-align: center;
 	font-size: small;
 	overflow: hidden;
 }
 
-.footer img.oxlogo {
-	float:right; 
-	padding-left: 10px
-}
-
-span.element {
-	font-weight: bold;
-}
-
-span.codename {
-	font-weight: bold;
-}
-
-img#me {
-	float:left;
-	padding:10px;
-	margin:1em;
-	margin-top: 0;
-}
-
-#contact {
-	float:left;
+.thumbnails a{
 	padding: 10px;
-	text-align: left;
-	font-size: small;
-	margin-top: 0px;
-}
-#contact h2 {
-	margin-top: 0;
-}
-#contact p:last-child {
-	margin-bottom: 0;
+	float: left;
+	border: 1px solid #999;
 }
 
-code {
-	font-family: "Lucida Console", Monaco, monospace;
+.thumbnails img {
+	max-height: 100px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
+.thumbnails p {
+	clear: left;
+	margin: 0;
+}
+
+/*code display*/
 .codeblock {
 	width: 94%;
 	padding: 3%;
@@ -167,7 +212,7 @@ code {
 	white-space: pre;
 }
 
-
+/*note in a box*/
 .note {
 	float:left;
 	border: 1px solid #999;
@@ -196,65 +241,42 @@ code {
 	overflow: hidden;
 }
 
-dl{
-	margin: 0;
-	margin-left: 1em;
-	margin-bottom: 1em;
-	padding: 0;
-	overflow: hidden;
-	line-height: 1.4;
+/*special text elements*/
+span.element {
+	font-weight: bold;
 }
 
-dt{
-	margin: 0;
-	margin-right: 1em;
-	margin-top: 1em;
-	padding: 0;
-	float: left;
-	clear: left;
-	min-width: 2em;
+span.codename {
+	font-weight: bold;
 }
 
-dt:first-of-type {
+/*specific elements*/
+#me {
+	float:left;
+	padding:10px;
+	margin:1em;
 	margin-top: 0;
 }
 
-dd{
-	margin-left: 2em;
-	margin-top: 1em;
-	padding: 0;
-}
-
-dd:first-of-type {
-	margin-top: 0;
-}
-
-
-.thumbnails {
-	text-align: center;
-	font-size: small;
-	overflow: hidden;
-}
-
-.thumbnails a{
+#contact {
+	float:left;
 	padding: 10px;
-	float: left;
-	border: 1px solid #999;
+	text-align: left;
+	font-size: small;
+	margin-top: 0px;
+}
+#contact h2 {
+	margin-top: 0;
+}
+#contact p:last-child {
+	margin-bottom: 0;
 }
 
-.thumbnails img {
-	max-height: 100px;
-	margin-left: 10px;
-	margin-right: 10px;
-}
 
-.thumbnails p {
-	clear: left;
-	margin: 0;
-}
 
-h1,h2,h3,h4,h5,h6 {
-	clear: left;
-	margin-top: 2em;
-	margin-bottom: 1em;
-}
+
+
+
+
+
+
