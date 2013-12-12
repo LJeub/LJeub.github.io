@@ -7,5 +7,4 @@ window.onload=function () {
 	for (var i = 0; i < occurances.length; i++) {
 		occurances[i].textContent=last_modified_formatted;
 	}
-	
 }
