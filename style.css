@@ -250,6 +250,10 @@ span.codename {
 	font-weight: bold;
 }
 
+span.papertitle {
+    font-weight: bold;
+}
+
 /*specific elements*/
 #me {
 	float:left;
