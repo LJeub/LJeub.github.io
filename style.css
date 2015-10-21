@@ -249,7 +249,7 @@ code {
 	margin: 0;
 	margin-bottom: 1em;
 	padding: 0;
-	font-size: normal;
+	font-size: medium;
 	overflow: hidden;
 }
 
@@ -262,9 +262,17 @@ span.codename {
 	font-weight: bold;
 }
 
-span.papertitle {
+/*citations*/
+#paperlist li {
+    margin-bottom: 1em;
+}
+.papertitle {
     font-weight: bold;
 }
+
+.authorlist {}
+
+.journal {}
 
 /*specific elements*/
 #me {
