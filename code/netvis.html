@@ -49,7 +49,9 @@
 					Layout using <span class="codename">SpringVisCom</span> default parameters, which attempts to preserve global distances between nodes by placing springs between all pairs of nodes. To generate this layout use:
 				</p>
 				<div class="codeblock">
-<code>xy=SpringVisCom(A,S);</code>
+<code>xy=SpringVisCom(A,S);
+	
+GraphPlot(xy,A,'scores',S)</code>
 				</div>
 			</div>
 			
@@ -61,9 +63,13 @@
 
 				<div class="codeblock">
 <code>[i,j,v]=find(A);
+	
 D=sparse(i,j,max(v)-v+1);
+
 xy=SpringVisCom(D,S,'background_field',1,...
-	'distance_matrix',true);</code>
+	'distance_matrix',true);
+	
+GraphPlot(xy,A,'scores',S)</code>
 				</div>
 			</div>
 		</div>
