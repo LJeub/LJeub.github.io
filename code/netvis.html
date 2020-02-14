@@ -8,40 +8,39 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="../scripts/insert_last_modified.js" type="text/javascript"></script>
 	</head>
-	
+
 	<body>
 		<div id="header">
 			<h1 id="heading">Lucas Jeub</h1>
 			<ul id="menu">
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../research.html">Research</a></li>
+				<li><a href="../home.html">Home</a></li>
 				<li><a href="../papers.html">Papers</a></li>
-				<li><a href="../teaching.html">Teaching</a></li>
 				<li><a href="../code.html">Code</a></li>
 				<li><a href="../links.html">Links</a></li>
+				<li><a href="../contact.html">Contact</a></li>
 			</ul>
 		</div>
-		
+
 		<h2 id="subheading"> <span class="codename">SpringVisCom</span> Examples</h2>
-		
+
 		<div class="note">
-			<h3>Notation</h3> 
+			<h3>Notation</h3>
 			<dl>
 				<dt><code>A</code></dt> <dd>Adjacency matrix</dd>
 				<dt><code>S</code></dt> <dd>Vector of community assignments for each node</dd>
 				<dt><code>xy</code></dt> <dd>Layout coordinates for each node</dd>
 			</dl>
 		</div>
-		
+
 		<div class="main">
-			
+
 			<h3>Network of network scientists</h3>
-			
+
 			<p>
-				Largest connected component of the <a href="http://www-personal.umich.edu/~mejn/netdata/" target="_blank"> coauthorship network of network scientists</a> compiled by Mark Newman. 
+				Largest connected component of the <a href="http://www-personal.umich.edu/~mejn/netdata/" target="_blank"> coauthorship network of network scientists</a> compiled by Mark Newman.
 			</p>
 		</div>
-		
+
 		<div class="imagegallery">
 			<div class="figure">
 				<a href="netvis/netsci.pdf"><img src="netvis/netsci.svg" alt="Visualisation of network of network scientists"/></a>
@@ -50,11 +49,11 @@
 				</p>
 				<div class="codeblock">
 <code>xy=SpringVisCom(A,S);
-	
+
 GraphPlot(xy,A,'scores',S)</code>
 				</div>
 			</div>
-			
+
 			<div class="figure">
 				<a href="netvis/netsci_local.pdf"><img src="netvis/netsci_local.svg" alt="Visualisation of network of network scientists" /></a>
 				<p>
@@ -63,21 +62,20 @@ GraphPlot(xy,A,'scores',S)</code>
 
 				<div class="codeblock">
 <code>[i,j,v]=find(A);
-	
+
 D=sparse(i,j,max(v)-v+1);
 
 xy=SpringVisCom(D,S,'background_field',1,...
 	'distance_matrix',true);
-	
+
 GraphPlot(xy,A,'scores',S)</code>
 				</div>
 			</div>
 		</div>
 
 		<div id="footer">
-			<img id="oxlogo" src="../oxford.jpg" alt="oxford logo"/>
 			<p>
-				This page was last modified by Lucas Jeub on <span class="last_modified"></span>. Please email <a href="mailto:jeub@maths.ox.ac.uk">jeub@maths.ox.ac.uk</a> for feedback and comments.
+				This page was last modified by Lucas Jeub on <span class="last_modified"></span>.
 			</p>
 		</div>
 	</body>
