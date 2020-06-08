@@ -115,7 +115,7 @@ code {
 
 /*main text*/
 .main {
-	text-align: left;
+	text-align: justify;
 	padding: 10px;
 	max-width: 700px;
 	margin: 0;
@@ -124,6 +124,8 @@ code {
 	margin-left: calc(100% / 2.62 - 720px / 2.62);
 	line-height: 1.4;
 	clear: left;
+	-webkit-hyphens: auto;
+	hyphens: auto;
 }
 
 @media (max-width: 740px) {
